@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b08ce0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles-contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0cebf067a0.js" crossorigin="anonymous"></script>
+    <title>Programa Facil - Contacto</title>
+    <link rel="icon" href="icono/programafacil.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="logo">
+            <img src="icono/PROGRAMAFACIL2.png" alt="Logo">
+        </div>
+        <div class="centrado">
+            <h1 class="titulo1">Programa Fácil </h1>
+        </div>
+    </header>
+    <section class="menu-section">
+        <nav class="menu-simple-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="nuestroscursos.html">Nuestros cursos</a></li>
+                <li><a href="formulario.htm">Contactenos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <h1 class='subtitulos' id="titulo-contacto">¡Escribinos para recibir mas información sobre nuestros cursos!</h1>
+        <div id="datos-adicionales-contacto">
+            <div class="datos-contacto-clasicos">
+                <p>Si te interesó alguno de nuestros cursos, dejanos tus datos y te mandamos toda la información para que puedas comenzar. </p>
+                <p>¡Animate!</p>
+					<p>También podes encontrarnos en nuestras redes sociales: </p>
+                <div>
+					<i class="fas fa-envelope icono-contacto"></i>
+                    <p>programafacil@mimail.com</p>
+				</div>
+                <div>
+                    <i class="fas fa-phone icono-contacto"></i>
+                    <p>(011) 1234 5678</p>
+                </div>
+                <div><i class="fab fa-whatsapp icono-contacto"></i>
+                    <p>+54 9 11 1234 5678</p>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor-secciones-contacto">
+            <section id="formulario-contacto" class="container">
+                <form action='/formsended' method='post' name='formulario-contacto-vickys-art'><input type='hidden' name='form-name' value='formulario-contacto-vickys-art' />
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" pattern="[a-zA-Z ]*" title="Utiliza únicamente caracteres alfabéticos" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono">
+                            </div>
+                        </div>
+						<div class="col-12">
+                            <div class="mb-3">
+                                <label for="Curso" class="form-label">Nombre del curso</label>
+                                <textarea class="form-control" id="curso" rows="5" name="comentarios" required></textarea>
+                            </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="5" name="comentarios" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><button type="submit" class="btn btn-dark">Enviar</button></div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section id="datos-de-contacto">
+                <div class="mapouter"><div class="gmap_canvas">
+					<iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Programa Facil&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+					</iframe><a href="https://capcuttemplate.org/">
+					Capcuttemplate.org</a>
+					</div>
+					<style>.mapouter{position:relative;text-align:right;width:100%;height:580px;}.gmap_canvas {overflow:hidden;
+					background:none!important;width:100%;height:580px;}.gmap_iframe {height:580px!important;}</style></div>
+			</section>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-menu">
+            <ul>
+                <li><a class="footer-menu-link" href="index.html">Inicio</a></li>
+                <li><a class="footer-menu-link" href="nuestroscursos.html">Nuestros Cursos</a></li>
+                <li><a class="footer-menu-link " href="SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a class="footer-menu-link " href="formulario.htm">Contactanos</a></li>
+            </ul>
+        </nav>
+        <div class="footer-social-media ">
+            <a href="https://www.instagram.com/programafacil/"><i id="instagram" class="fab fa-instagram "></i></a>
+            <a href="https://www.facebook.com/programafacil"><i id="facebook" class="fab fa-facebook "></i></a>
+            <a href="https://wa.me/5491155555555"><i id="whatsapp" class="fab fa-whatsapp "></i></a>
+        </div>
+        <div class="footer-contacto ">
+            <div><i class="fas fa-envelope "></i>
+                <p>programafacil@mimail.com</p>
+            </div>
+            <div>
+                <i class="fas fa-phone "></i>
+                <p>+54 9 11 1234 5678</p>
+            </div>
+        </div>
+            <div id="firma">
+                <div>&copy;2023 Programa Fácil</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

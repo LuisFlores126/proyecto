@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #33032d;
+    --purple-light: #d441d4;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+}
+
+.contenido_header .texto {
+    background-image: linear-gradient(-225deg, #08f9b1 0%, #f10cc4 100%);
+    width: 100vw -20px;
+    height: 20vh;
+    font-size: 90px;
+    font-weight: 400;
+    font-size: 'noto serif';
+    font-style: italic;
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+    color: var(--purple-medium);
+    mix-blend-mode:multiply;    
+}
+.menu {
+    /* background-color: var(--purple-medium); */
+    background: #70a7da;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'noto serif';
+    font-style: italic;
+}
+.menu a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    /* background-color: var(--purple-medium); */
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: var(--gray-light);
+    text-decoration: none;
+}
+.menu a:hover {
+    transform: translateY(18px);
+    background-color: var(--purple-light);
+    border-radius: 15px;
+}
+.contentAll {
+    width: 120px;
+    margin: auto;
+    perspective: 600px;
+    position: relative;
+    margin-top:50px;
+}
+.carrusel {
+    width: 100%;
+    position: absolute;
+    animation: rotar 20s infinite linear;
+    transform-style:preserve-3d ;
+    /* top: 5px; */
+}   
+.carrusel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.carrusel figure {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 100ms;
+}
+.carrusel figure:hover {
+    box-shadow: 0px 0px 0px 0px rgb(0px, 0px, 0px);
+    transition: all 150ms;
+}
+.carrusel figure:nth-child(1){transform: rotateY(60deg) translateZ(300px);}
+.carrusel figure:nth-child(2){transform: rotateY(120deg) translateZ(300px);}
+.carrusel figure:nth-child(3){transform: rotateY(180deg) translateZ(300px);}
+.carrusel figure:nth-child(4){transform: rotateY(240deg) translateZ(300px);}
+.carrusel figure:nth-child(5){transform: rotateY(300deg) translateZ(300px);}
+.carrusel figure:nth-child(6){transform: rotateY(360deg) translateZ(300px);}
+
+
+.carrusel img {
+    width: 100%;
+    height: 150px;
+    transition: all 300ms;
+    border-radius: 10px;
+}
+
+.carrusel img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    } to{
+        transform: rotateY(360deg);
+    }
+}
+
+/* .fondopantalla {
+    display: none;
+} */
+
+footer {
+    background: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    top: 400px;
+}
+
+/* .logo-footer {
+    width: 20rem;
+    border-radius: 10rem;
+    margin: 2rem;
+    align-self: center;
+} */
+
+.footer-menu {
+    margin: 1rem;
+}
+
+.footer-menu li {
+    list-style: none;
+}
+
+.footer-menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.footer-menu-link:hover {
+    color: #2231b6;
+    transition: .5s;
+}
+
+.footer-social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.footer-social-media a:hover {
+    transition: .5s;
+}
+
+#instagram:hover {
+    color: #c62568;
+}
+
+#facebook:hover {
+    color: #1876f2;
+}
+
+#whatsapp:hover {
+    color: #2db842;
+}
+
+.footer-contacto {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.footer-contacto div {
+    margin: 1rem 3rem;
+    display: inline-block;
+}
+
+.footer-contacto p {
+    display: inline-block;
+    font-size: 1.5rem;
+   
+#firma {
+    font-size: 1.5rem;
+    color: #fafafa;
+    margin-top: 2rem;
+    background: #212529;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+#firma a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#firma i {
+    color: #fafafa;
+    margin: 1rem;
+}
+}

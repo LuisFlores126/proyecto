@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    /* padding: auto; */
+}
+
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #33032d;
+    --purple-light: #d441d4;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+}
+
+.cabecera {
+    background-image: linear-gradient(-225deg, #08f9b1 0%, #f10cc4 100%);
+    width: 100vw -20px;
+    height: 20vh;
+    font-size: 90px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--purple-medium);
+    mix-blend-mode:multiply;
+}
+.centrado {
+    margin: 0 auto;
+    padding: 0 .8em;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* .titulo1 {  } */
+
+.titulo1 {
+    margin: 0.5em;
+    padding: 1em 0;
+    font-weight: 50;
+    font-size: 'noto serif';
+    font-style: italic;      
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align:justify;
+    font-size: 500%;
+}
+/* menu responsive inicio*/
+.menu-section {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #010308;
+} 
+.menu-simple-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #70a7da;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.menu-simple-menu li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: .6em 1em;
+    font-size: 20px;
+    font-size: 'noto serif';
+    font-style: italic;
+}
+.menu-simple-menu li a:hover {
+    background: #b5d0ea;
+}
+.menu-simple-menu li{
+    flex: 1 0 auto;
+    text-align: center;
+}
+/* fin menu*/
+
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    margin: 20px;
+    width: 450px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) { 
+div {
+    font-size: 10px;
+}
+.imagen {
+    margin: 20px;
+    width: 350px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+}
+
+@media only screen and (min-width: 600px) {
+div {
+    font-size: 15px;
+}
+.imagen {
+    margin: 20px;
+    width: 350px;
+    margin-left: 25px;
+    border-radius: 10px; 
+}
+}
+
+footer {
+    background: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.footer-menu {
+    margin: 1rem;
+}
+
+.footer-menu li {
+    list-style: none;
+}
+
+.footer-menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.footer-menu-link:hover {
+    color: #2231b6;
+    transition: .5s;
+}
+
+.footer-social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.footer-social-media a:hover {
+    transition: .5s;
+}
+
+#instagram:hover {
+    color: #c62568;
+}
+
+#facebook:hover {
+    color: #1876f2;
+}
+
+#whatsapp:hover {
+    color: #2db842;
+}
+
+.footer-contacto {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.footer-contacto div {
+    margin: 1rem 3rem;
+    display: inline-block;
+}
+
+.footer-contacto p {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+#firma {
+    font-size: 1.5rem;
+    color: #fafafa;
+    margin-top: 2rem;
+    background: #212529;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+#firma a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#firma i {
+    color: #fafafa;
+    margin: 1rem;
+}
+
+
+/* footer {
+    width: auto;
+    height: 200px;
+    margin-left: 0px;
+    margin-right: auto;
+    background-color: black;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#datos {
+    width: 300px;
+    height: 180px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#botonera_redes {
+    width: 400px;
+    height: 40px;
+    float: right;
+    margin-top: 15px;    
+}
+
+#botonera_redes ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#botonera_redes ul li {
+    display: inline;
+}
+
+#botonera_redes ul li img {
+    display: inline-block;
+    padding: 1px;
+    width: 25px;  
+}
+
+@media only screen and (max-width: 600px) {
+    #botonera_redes ul li img {  
+    position: relative;
+    right: 10px;
+    bottom: 180px;
+    width: 17px;
+    }   
+} */
+
